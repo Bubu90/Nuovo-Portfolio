@@ -1,17 +1,42 @@
 import emailjs from "@emailjs/browser";
-import { useEffect, useRef } from "react";
+import { useEffect, useRef, useCallback } from "react";
 import { createPortal } from "react-dom";
 
 const ContactUs = ({ open, onClose }) => {
   const dialog = useRef();
 
+  const handleOutsideClick = useCallback(
+    (event) => {
+      if (dialog.current && !dialog.current.contains(event.target)) {
+        onClose();
+      }
+    },
+    [onClose]
+  );
+
+  const handleKeyDown = useCallback(
+    (event) => {
+      if (event.key === "Escape") {
+        onClose();
+      }
+    },
+    [onClose]
+  );
+
   useEffect(() => {
     if (open) {
       dialog.current.showModal();
+      document.addEventListener("mousedown", handleOutsideClick);
+      document.addEventListener("keydown", handleKeyDown);
     } else {
       dialog.current.close();
     }
-  }, [open]);
+
+    return () => {
+      document.removeEventListener("mousedown", handleOutsideClick);
+      document.removeEventListener("keydown", handleKeyDown);
+    };
+  }, [open, handleOutsideClick, handleKeyDown]);
 
   const form = useRef();
 
