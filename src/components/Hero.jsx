@@ -13,9 +13,7 @@ const container = (delay) => ({
   },
 });
 
-const Hero = () => {
-  const [menuOpenForm, setMenuOpenForm] = useState(false);
-
+const Hero = ({ setMenuOpenForm, menuOpenForm }) => {
   const cvFileName = "/Laria Bruno Curriculum.pdf";
 
   return (

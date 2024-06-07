@@ -4,15 +4,16 @@ import { createPortal } from "react-dom";
 
 const ContactUs = ({ open, onClose }) => {
   const dialog = useRef();
+  const form = useRef();
 
-  const handleOutsideClick = useCallback(
-    (event) => {
-      if (dialog.current && !dialog.current.contains(event.target)) {
-        onClose();
-      }
-    },
-    [onClose]
-  );
+  // const handleOutsideClick = useCallback(
+  //   (event) => {
+  //     if (dialog.current && !dialog.current.contains(event.target)) {
+  //       onClose();
+  //     }
+  //   },
+  //   [onClose]
+  // );
 
   const handleKeyDown = useCallback(
     (event) => {
@@ -26,19 +27,17 @@ const ContactUs = ({ open, onClose }) => {
   useEffect(() => {
     if (open) {
       dialog.current.showModal();
-      document.addEventListener("mousedown", handleOutsideClick);
+      // document.addEventListener("mousedown", handleOutsideClick);
       document.addEventListener("keydown", handleKeyDown);
     } else {
       dialog.current.close();
     }
 
     return () => {
-      document.removeEventListener("mousedown", handleOutsideClick);
+      // document.removeEventListener("mousedown", handleOutsideClick);
       document.removeEventListener("keydown", handleKeyDown);
     };
-  }, [open, handleOutsideClick, handleKeyDown]);
-
-  const form = useRef();
+  }, [open, handleKeyDown]);
 
   const sendEmail = (e) => {
     e.preventDefault();
@@ -73,15 +72,19 @@ const ContactUs = ({ open, onClose }) => {
       {open && <div className="fixed inset-0 z-10 bg-black bg-opacity-50" />}
       <dialog
         ref={dialog}
-        className="fixed inset-0 z-20 flex justify-center items-center"
+        className="fixed inset-0 z-20 flex justify-center items-center bg-transparent"
       >
         <form
           ref={form}
           onSubmit={sendEmail}
-          className="bg-white p-8 rounded-lg shadow-md w-96"
+          className=" bg-transparent bg-opacity-100 p-8 rounded-lg shadow-md w-96"
+          onClick={(e) => e.stopPropagation()} // Prevent click events from closing the dialog
         >
           <p className="mb-4">
-            <label htmlFor="user_name" className="block mb-2 text-gray-800">
+            <label
+              htmlFor="user_name"
+              className="block text-white mb-2 text-gray-800"
+            >
               Name*
             </label>
             <input
@@ -93,7 +96,10 @@ const ContactUs = ({ open, onClose }) => {
             />
           </p>
           <p className="mb-4">
-            <label htmlFor="user_email" className="block mb-2 text-gray-800">
+            <label
+              htmlFor="user_email"
+              className="block mb-2  text-white text-gray-800"
+            >
               Email*
             </label>
             <input
@@ -105,7 +111,10 @@ const ContactUs = ({ open, onClose }) => {
             />
           </p>
           <p className="mb-4">
-            <label htmlFor="message" className="block mb-2 text-gray-800">
+            <label
+              htmlFor="message"
+              className="block mb-2 text-white text-gray-800"
+            >
               Message*
             </label>
             <textarea
