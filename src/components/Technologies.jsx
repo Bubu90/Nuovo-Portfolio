@@ -201,7 +201,7 @@ const Technologies = () => {
           >
          
           <img 
-    src="./../../src/assets//Windows_logo.jpg"  // Inserisci il percorso corretto dell'immagine
+    src={PROJECTS[8].img} // Inserisci il percorso corretto dell'immagine
     alt="Descrizione dell'immagine"  // Descrizione dell'immagine per l'accessibilità
     className="w-16 h-16"  
     />

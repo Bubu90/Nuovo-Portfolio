@@ -9,6 +9,7 @@ import project8 from "../assets/Placepicker.jpg";
 import project9 from "../assets/quizzOnePiece.jpg";
 import project10 from "../assets/food.jpg";
 import immagine1 from "../assets/mysql-5-logo-png-transparent.jpg";
+import immagine2 from "../assets/Windows_logo.jpg";
 
 
 
@@ -134,6 +135,7 @@ export const PROJECTS = [
     technologies: ["React", "CSS", "javascript"],
     demo: "https://reactquizbyvasco.netlify.app/",
     source: "https://github.com/Bubu90/Quizz-App",
+    img:immagine2,
   },
 
   {
