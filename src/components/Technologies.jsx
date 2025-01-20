@@ -149,7 +149,7 @@ const Technologies = () => {
         >
        
           <img 
-    src="./../../src/assets/mysql-5-logo-png-transparent.png"  // Inserisci il percorso corretto dell'immagine
+    src="./../../src/assets/mysql-5-logo-png-transparent.jpg"  // Inserisci il percorso corretto dell'immagine
     alt="Descrizione dell'immagine"  // Descrizione dell'immagine per l'accessibilità
     className="w-18 h-20"  // Definisci la dimensione dell'immagine (come esempio: 64px x 64px)
   />
@@ -195,7 +195,7 @@ const Technologies = () => {
         >
          
           <img 
-    src="./../../src/assets//Windows_logo.png"  // Inserisci il percorso corretto dell'immagine
+    src="./../../src/assets//Windows_logo.jpg"  // Inserisci il percorso corretto dell'immagine
     alt="Descrizione dell'immagine"  // Descrizione dell'immagine per l'accessibilità
     className="w-16 h-16"  
   />
