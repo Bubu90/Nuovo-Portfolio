@@ -8,6 +8,9 @@ import project7 from "../assets/management.jpg";
 import project8 from "../assets/Placepicker.jpg";
 import project9 from "../assets/quizzOnePiece.jpg";
 import project10 from "../assets/food.jpg";
+import immagine1 from "../assets/mysql-5-logo-png-transparent.jpg";
+
+
 
 export const HERO_CONTENT = `Sono un Full Stack Developer con formazione presso Hackademy Aulab e una specializzazione ulteriore in React.js attraverso CGM Consulting.Le mie esperienze precedenti nella logistica hanno affinato le mie capacità di progettazione e organizzazione. Ora sono un professionista che lavora ma alla ricerca sempre di nuove sfide e opportunità. Empatico e socievole, mi adatto facilmente al lavoro di squadra e mi piace affrontare nuove sfide. Presto grande attenzione ai dettagli in ogni fase dello sviluppo web, garantendo la qualità del prodotto entro scadenze serrate. La mia creatività nel design e la capacità di risolvere problemi complessi mi consentono di creare esperienze utente coinvolgenti e affrontare le sfide tecniche con determinazione.`;
 
@@ -20,7 +23,7 @@ export const EXPERIENCES = [
     company: "3ITechnology",
     description: `Full stack Developer con l'obiettivo di apprendere e imparare le varie tecnologie web, come Angular, Power Platform Mirosoft, SQL, MySQL, Typescript, Javascript e C#.
     Ho preso parte a vari progetti di sviluppo app web/softwer per aziende anche importandi come per esempio  Gnerali assicurazione.s `,
-    technologies: ["Angular", "Power Platform Mirosoft", "SQL", "MySQL", "Typescript", "Javascript","C#"],
+    technologies: ["Angular", "Power Platform Mirosoft", "SQL", "MySQL", "Typescript", "Javascript", "C#"],
   },
   {
     year: "2024 - 2024",
@@ -141,6 +144,7 @@ export const PROJECTS = [
     technologies: ["React", "CSS", "javascript"],
     demo: "https://foabyvasco.netlify.app/",
     source: "https://github.com/Bubu90/react-final-project-cgm",
+    img:immagine1,
   },
 ];
 

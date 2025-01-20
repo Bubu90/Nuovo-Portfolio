@@ -1,6 +1,5 @@
 import { RiReactjsLine } from "react-icons/ri";
 import { TbBrandNextjs } from "react-icons/tb";
-
 import { GrHtml5 } from "react-icons/gr";
 import {
   FaCss3,
@@ -9,16 +8,19 @@ import {
   FaTrello,
   FaGithub,
 } from "react-icons/fa";
+import {PROJECTS} from "../constants";
 import { IoLogoJavascript } from "react-icons/io";
 import { BiLogoTailwindCss } from "react-icons/bi";
-import { SiMysql } from "react-icons/si";
 import { TbBrandVscode } from "react-icons/tb";
 import { motion } from "framer-motion";
 import { TbFileTypeSql } from "react-icons/tb";
-import { TiVendorMicrosoft } from "react-icons/ti";
 import { FaAngular } from "react-icons/fa";
 import { TbBrandCSharp } from "react-icons/tb";
 import { SiIonic } from "react-icons/si";
+
+
+
+
 
 
 
@@ -142,6 +144,7 @@ const Technologies = () => {
           <TbBrandVscode className="text-7xl text-blue-700" />
         </motion.div>
       <motion.div
+      
           variants={iconVariants(2.5)}
           initial="initial"
           animate="animate"
@@ -149,17 +152,20 @@ const Technologies = () => {
         >
        
           <img 
-    src="./../../src/assets/mysql-5-logo-png-transparent.jpg"  // Inserisci il percorso corretto dell'immagine
+    src={PROJECTS[9].img} 
+    
+    
     alt="Descrizione dell'immagine"  // Descrizione dell'immagine per l'accessibilità
     className="w-18 h-20"  // Definisci la dimensione dell'immagine (come esempio: 64px x 64px)
   />
+  
         </motion.div>
         <motion.div
           variants={iconVariants(5)}
           initial="initial"
           animate="animate"
           className="rounded-2xl border-4 border-orange-800 p-4"
-        >
+          >
           <TbFileTypeSql style={{color: "#d47030"}}  className="text-7xl text-500" />
         </motion.div>
         <motion.div
@@ -167,7 +173,7 @@ const Technologies = () => {
           initial="initial"
           animate="animate"
           className="rounded-2xl border-4 border-violet-800 p-4"
-        >
+          >
           <TbBrandCSharp   className="text-7xl text-violet-400" />
         </motion.div>
         <motion.div
@@ -175,8 +181,8 @@ const Technologies = () => {
           initial="initial"
           animate="animate"
           className="rounded-2xl border-4 border-red-800 p-4"
-         
-        >
+          
+          >
  <svg width="0" height="0">
   <defs>
     <linearGradient id="gradientRed" x1="0%" y1="0%" x2="100%" y2="0%">
@@ -192,13 +198,13 @@ const Technologies = () => {
           initial="initial"
           animate="animate"
           className="rounded-2xl border-4 border-white-800 p-4"
-        >
+          >
          
           <img 
     src="./../../src/assets//Windows_logo.jpg"  // Inserisci il percorso corretto dell'immagine
     alt="Descrizione dell'immagine"  // Descrizione dell'immagine per l'accessibilità
     className="w-16 h-16"  
-  />
+    />
         </motion.div>
        
         <motion.div
@@ -206,7 +212,7 @@ const Technologies = () => {
           initial="initial"
           animate="animate"
           className="rounded-2xl border-4 border-blue-800 p-4"
-        >
+          >
           <SiIonic    className="text-7xl text-blue-500" />
  
         </motion.div>
@@ -214,5 +220,6 @@ const Technologies = () => {
     </div>
   );
 };
+console.log(PROJECTS[9].image);
 
 export default Technologies;
