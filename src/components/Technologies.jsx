@@ -197,7 +197,7 @@ const Technologies = () => {
           <img 
     src="./../../src/assets//Windows_logo.png"  // Inserisci il percorso corretto dell'immagine
     alt="Descrizione dell'immagine"  // Descrizione dell'immagine per l'accessibilità
-    className="w-16 h-16"  // Definisci la dimensione dell'immagine (come esempio: 64px x 64px)
+    className="w-16 h-16"  
   />
         </motion.div>
        
