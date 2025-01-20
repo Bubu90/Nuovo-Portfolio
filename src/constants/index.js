@@ -9,13 +9,21 @@ import project8 from "../assets/Placepicker.jpg";
 import project9 from "../assets/quizzOnePiece.jpg";
 import project10 from "../assets/food.jpg";
 
-export const HERO_CONTENT = `Sono un front-end developer con formazione presso Hackademy Aulab e una specializzazione ulteriore in React.js attraverso CGM Consulting. Le mie esperienze precedenti nella logistica hanno affinato le mie capacità di progettazione e organizzazione. Empatico e socievole, mi adatto facilmente al lavoro di squadra e mi piace affrontare nuove sfide. Presto grande attenzione ai dettagli in ogni fase dello sviluppo web, garantendo la qualità del prodotto entro scadenze serrate. La mia creatività nel design e la capacità di risolvere problemi complessi mi consentono di creare esperienze utente coinvolgenti e affrontare le sfide tecniche con determinazione.`;
+export const HERO_CONTENT = `Sono un Full Stack Developer con formazione presso Hackademy Aulab e una specializzazione ulteriore in React.js attraverso CGM Consulting.Le mie esperienze precedenti nella logistica hanno affinato le mie capacità di progettazione e organizzazione. Ora sono un professionista che lavora ma alla ricerca sempre di nuove sfide e opportunità. Empatico e socievole, mi adatto facilmente al lavoro di squadra e mi piace affrontare nuove sfide. Presto grande attenzione ai dettagli in ogni fase dello sviluppo web, garantendo la qualità del prodotto entro scadenze serrate. La mia creatività nel design e la capacità di risolvere problemi complessi mi consentono di creare esperienze utente coinvolgenti e affrontare le sfide tecniche con determinazione.`;
 
 export const ABOUT_TEXT = `Sono un professionista che eccelle nel lavoro di squadra, adottando metodologie agili e dimostrando una forte creatività. Grazie all'approccio Scrum, riesco a mantenere efficienza e flessibilità in ogni progetto. Mi distinguo per la mia capacità di risolvere problemi in modo innovativo, affrontando ogni sfida con una prospettiva dinamica e collaborativa.`;
 
 export const EXPERIENCES = [
   {
-    year: "2024 - Presente",
+    year: "2024- Presente",
+    role: "Full stack developer",
+    company: "3ITechnology",
+    description: `Full stack Developer con l'obiettivo di apprendere e imparare le varie tecnologie web, come Angular, Power Platform Mirosoft, SQL, MySQL, Typescript, Javascript e C#.
+    Ho preso parte a vari progetti di sviluppo app web/softwer per aziende anche importandi come per esempio  Gnerali assicurazione.s `,
+    technologies: ["Angular", "Power Platform Mirosoft", "SQL", "MySQL", "Typescript", "Javascript","C#"],
+  },
+  {
+    year: "2024 - 2024",
     role: "Front-Developer Reactjs",
     company: "FoxByte SRL",
     description: ` Freelance Developer. Da remoto. Sviluppo front-end con React JS Nextjs e NodeJS. Contributo regolare su progetto in collaborazione. Bugfixing e migliorie tecniche per la use experience.  
@@ -42,7 +50,8 @@ export const EXPERIENCES = [
     company: "AULAB",
     description: `Corso intensivo di 3 mesi per apprnedere al meglio le basi di programmazione in HTML, CSS, Javascript, con l'utilizzo di framework come Laravel insieme a PHP e MySQL.`,
     technologies: ["Laravel", "HTML", "CSS", "PHP", "MySQL", "Javascript"],
-  },
+  }
+
 ];
 
 export const PROJECTS = [
