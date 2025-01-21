@@ -14,7 +14,7 @@ const container = (delay) => ({
 });
 
 const Hero = ({ setMenuOpenForm, menuOpenForm }) => {
-  const cvFileName = "Laria Bruno Curriculum.pdf";
+  const cvFileName = "Bruno_Laria_CV.pdf";
 
   return (
     <>
